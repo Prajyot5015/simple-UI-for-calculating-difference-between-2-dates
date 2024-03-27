@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Difference Between Two Dates</title>
+    <style>
+        body {
+            background-color: #FA8BFF;
+            background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+        }
+
+        .heading {
+            text-align: center;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .parent-container {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 400px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, .3);
+        }
+
+        .container {
+            display: block;
+            margin: 10px auto;
+            padding-top: 40px;
+            width: 300px;
+            font-size: 25px;
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 20px;
+        }
+        #dayCount{
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .btn-container{
+            display: flex;
+            justify-content: space-around; 
+            margin-top: 40px;    
+            margin-bottom: 30px;    
+        }
+
+        .btn {
+            background-color: #FA8BFF;
+            background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+            color: #fff;
+            font-size: 20px;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Calculate Difference Between Two Dates </h1>
+    <div class="parent-container">
+        <div class="container">
+            <label for="firstDate">First Date :</label>
+            <input type="date" id="firstDate">
+            <br> <br>
+
+            <label for="secondDate">Second Date :</label>
+            <input type="date" id="secondDate"> 
+        </div>
+        <p id="dayCount"></p>
+        <div class="btn-container">
+            <button type="button" class="btn" >Find Difference</button>
+            <button type="button" class="btn" ">Reset</button>
+        </div> 
+             
+    </div>
+
+
+  
+</body>
+</html>
